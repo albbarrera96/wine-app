@@ -15,6 +15,7 @@
                 <h2>Datos a llenar:</h2>
                 <h4>Peso de pulpa:</h4>
                 <h3>{{pulp}} Kg</h3>
+                <p>{{fruitWaterLimit}}</p>
             </div>
         </div>
     </div>
@@ -24,19 +25,16 @@
 <script>
 
 import {ref} from 'vue'
+import fruits from '../components/data/fruitsDB.json'
 
 export default {
     setup() {
-        const fruits = ref([
-            {'name': 'Fresa', 'sugar': 8.1, 'acidity': 10.1, 'waterLimit': 0.75},
-            /* {'name': 'Manzana', 'sugar': 10, 'acidity': 5.8, 'waterLimit': 1} */
-        ]);
+        fruits;
         var pulp = ref(1);
 
-
         return {
+            pulp,
             fruits,
-            pulp
         }
     }
 }

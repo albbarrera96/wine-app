@@ -1,0 +1,4 @@
+{
+    "fruits":
+        { "id": 1, "name": "Fresa", "sugar": 8.1, "acidity": 10.1, "waterLimit": 0.75 }
+}    
